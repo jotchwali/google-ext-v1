@@ -15,3 +15,13 @@ function saveContent() {
 
 // Listen for changes in editable cells and save content
 document.addEventListener('input', saveContent);
+
+// Retrieve saved content when needed
+chrome.storage.local.get(null, function(items) {
+  for (let key in items) {
+    const cell = document.getElementById(key);
+    if (cell) {
+      cell.innerText = items[key];
+    }
+  }
+});
