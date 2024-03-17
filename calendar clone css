@@ -5,6 +5,7 @@ body {
 }
 
 .timetable {
+  width: 600px;
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -23,6 +24,7 @@ body {
 }
 
 .time-column, .day-column {
+  width: 100px;
   flex: 1;
   border: 1px solid #ccc;
 }
