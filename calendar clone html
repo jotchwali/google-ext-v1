@@ -15,6 +15,7 @@
         <div class="time-row">8:00 AM</div>
         <div class="time-row">9:00 AM</div>
         <div class="time-row">10:00 AM</div>
+        <div class="time-row">11:00 AM</div>
         <div class="time-row">12:00 PM</div>
         <div class="time-row">1:00 PM</div>
         <div class="time-row">2:00 PM</div>
@@ -32,7 +33,34 @@
         <div class="day-cell" contenteditable="true"></div>
         <!-- Add more cells for other hours -->
       </div>
-      <!-- Repeat day-column for Tuesday to Friday -->
+      <div class="day-column">
+        <div class="day-header">Tuesday</div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <!-- Add more cells for other hours -->
+      </div>
+      <div class="day-column">
+        <div class="day-header">Wednesday</div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <!-- Add more cells for other hours -->
+      </div>
+      <div class="day-column">
+        <div class="day-header">Thursday</div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <!-- Add more cells for other hours -->
+      </div>
+      <div class="day-column">
+        <div class="day-header">Friday</div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <!-- Add more cells for other hours -->
+      </div>
     </div>
   </div>
 </body>
