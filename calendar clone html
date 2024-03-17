@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="calendar-clone.css">
 </head>
 <body>
-  <div class="timetable" style="width: 900px;">
+  <div class="timetable" style="width: 600px;">
     <div class="header"></div>
     <div class="timetable-content">
       <div class="time-column">
