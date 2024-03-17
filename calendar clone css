@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.timetable {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.timetable-content {
+  display: flex;
+}
+
+.time-column, .day-column {
+  flex: 1;
+  border: 1px solid #ccc;
+}
+
+.time-header, .day-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.time-row, .day-cell {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.day-cell {
+  min-height: 50px;
+  overflow: auto;
+}
+
+.day-cell[contenteditable="true"] {
+  background-color: #fff;
+}
