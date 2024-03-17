@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="calendar-clone.css">
 </head>
 <body>
+
+  <form id="dataForm">
+    <label for="inputData">Enter Data:</label>
+    <input type="text" id="inputData" name="inputData">
+    <button type="submit">Save Data</button>
+  </form>
+  <script src="popup.js"></script>
+  
   <div class="timetable" style="width: 600px;">
     <div class="header"></div>
     <div class="timetable-content">
@@ -28,18 +36,18 @@
       </div>
       <div class="day-column">
         <div class="day-header">Monday</div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" id="monday_8am" contenteditable="true"></div>
+        <div class="day-cell" id="monday_9am" contenteditable="true"></div>
+        <div class="day-cell" id="monday_10am" contenteditable="true"></div>
+        <div class="day-cell" id="monday_11am" contenteditable="true"></div>
+        <div class="day-cell" id="monday_12pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_1pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_2pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_3pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_4pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_5pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_6pm" contenteditable="true"></div>
+        <div class="day-cell" id="monday_7pm" contenteditable="true"></div>
         
 
         <!-- Add more cells for other hours -->
@@ -47,67 +55,67 @@
 
       <div class="day-column">
         <div class="day-header">Tuesday</div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_8am" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_9am" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_10am" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_11am" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_12pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_1pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_2pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_3pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_4pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_5pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_6pm" contenteditable="true"></div>
+        <div class="day-cell" id="tuesday_7pm" contenteditable="true"></div>
         <!-- Add more cells for other hours -->
       </div>
 
       <div class="day-column">
         <div class="day-header">Wednesday</div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_8am" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_9am" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_10am" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_11am" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_12pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_1pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_2pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_3pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_4pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_5pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_6pm" contenteditable="true"></div>
+        <div class="day-cell" id="wednesday_7pm" contenteditable="true"></div>
         <!-- Add more cells for other hours -->
       </div>
       <div class="day-column">
         <div class="day-header">Thursday</div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_8am" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_9am" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_10am" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_11am" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_12pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_1pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_2pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_3pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_4pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_5pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_6pm" contenteditable="true"></div>
+        <div class="day-cell" id="thursday_7pm" contenteditable="true"></div>
         <!-- Add more cells for other hours -->
       </div>
       <div class="day-column">
         <div class="day-header">Friday</div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
-        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" id="friday_8am" contenteditable="true"></div>
+        <div class="day-cell" id="friday_9am" contenteditable="true"></div>
+        <div class="day-cell" id="friday_10am" contenteditable="true"></div>
+        <div class="day-cell" id="friday_11am" contenteditable="true"></div>
+        <div class="day-cell" id="friday_12pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_1pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_2pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_3pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_4pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_5pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_6pm" contenteditable="true"></div>
+        <div class="day-cell" id="friday_7pm" contenteditable="true"></div>
         <!-- Add more cells for other hours -->
       </div>
     </div>
