@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Timetable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timetable">
+    <div class="header"></div>
+    <div class="timetable-content">
+      <div class="time-column">
+        <div class="time-header">Time</div>
+        <div class="time-row">9:00 AM</div>
+        <div class="time-row">10:00 AM</div>
+        <div class="time-row">11:00 AM</div>
+        <!-- Add more rows for other hours -->
+      </div>
+      <div class="day-column">
+        <div class="day-header">Monday</div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <div class="day-cell" contenteditable="true"></div>
+        <!-- Add more cells for other hours -->
+      </div>
+      <!-- Repeat day-column for Tuesday to Friday -->
+    </div>
+  </div>
+</body>
+</html>
